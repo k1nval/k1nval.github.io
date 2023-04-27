@@ -17,7 +17,7 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-619F3M4N1K');
+    gtag('config', 'G-619F3M4N1K', { 'debug_mode': true });
   </script>
 </head>
 
@@ -27,6 +27,7 @@
   </h1>
   <div>This is where the purchase form would go</div>
   <button id="purchase">Fire purchase event</button>
+  
   <script>
     // The random string with length 15.
     function randomTransactionId() {
@@ -69,4 +70,5 @@
     });
   </script>
 </body>
+
 </html>
