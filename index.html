@@ -1,7 +1,8 @@
 <html>
-  <head>
-    <!-- Google tag (gtag.js) -->
-<!-- <script async src="https://gtm-ctfe-integration.corp.google.com/gtag/js?id=AW-12000036316"></script>
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <!-- <script async src="https://gtm-ctfe-integration.corp.google.com/gtag/js?id=AW-12000036316"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -9,26 +10,27 @@
 
   gtag('config', 'AW-12000036316');
 </script> -->
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-619F3M4N1K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-619F3M4N1K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-619F3M4N1K');
-</script>
-  </head>
-  <body>
-    <h1>
-      Welcome to CT testing page.
-    </h1>
-        <div>This is where the purchase form would go</div>
-    <button id="purchase">Fire purchase event</button>
-    <script>
-          document.getElementById("purchase").addEventListener("click", function () {
+    gtag('config', 'G-619F3M4N1K');
+  </script>
+</head>
 
-    gtag("event", "purchase", {
+<body>
+  <h1>
+    Welcome to CT testing page.
+  </h1>
+  <div>This is where the purchase form would go</div>
+  <button id="purchase">Fire purchase event</button>
+  <script>
+    document.getElementById("purchase").addEventListener("click", function () {
+
+      gtag("event", "purchase", {
         transaction_id: "T_12345_1",
         value: 25.42,
         tax: 4.90,
@@ -36,30 +38,30 @@
         currency: "USD",
         coupon: "SUMMER_SALE",
         items: [
-        // If someone purchases more than one item, 
-        // you can add those items to the items array
-         {
-          item_id: "SKU_12345",
-          item_name: "Stan and Friends Tee",
-          affiliation: "Google Merchandise Store",
-          coupon: "SUMMER_FUN",
-          discount: 2.22,
-          index: 0,
-          item_brand: "Google",
-          item_category: "Apparel",
-          item_category2: "Adult",
-          item_category3: "Shirts",
-          item_category4: "Crew",
-          item_category5: "Short sleeve",
-          item_list_id: "related_products",
-          item_list_name: "Related Products",
-          item_variant: "green",
-          location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-          price: 9.99,
-          quantity: 1
-        }]
+          // If someone purchases more than one item, 
+          // you can add those items to the items array
+          {
+            item_id: "SKU_12345",
+            item_name: "Stan and Friends Tee",
+            affiliation: "Google Merchandise Store",
+            coupon: "SUMMER_FUN",
+            discount: 2.22,
+            index: 0,
+            item_brand: "Google",
+            item_category: "Apparel",
+            item_category2: "Adult",
+            item_category3: "Shirts",
+            item_category4: "Crew",
+            item_category5: "Short sleeve",
+            item_list_id: "related_products",
+            item_list_name: "Related Products",
+            item_variant: "green",
+            location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+            price: 9.99,
+            quantity: 1
+          }]
+      });
     });
-          });
-    </script>
-  </body>
+  </script>
+</body>
 </html>
